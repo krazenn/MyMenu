@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Order {
     /**
      * Display all available menus in the restaurant.
@@ -37,5 +39,9 @@ public class Order {
         }
     }
     public void runMenu() {
+        this.displayAvailableMenu();
+        Scanner sc = new Scanner(System.in);
+        int nb = sc.nextInt();
+        this.displaySelectedMenu(nb);
     }
 }
