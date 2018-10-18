@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="eac137c8-306c-4037-a076-d162dbf06891" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyMenu/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyMenu/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyMenu/com/company/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyMenu/com/company/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com.company/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com.company/OrderTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,14 +37,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="161" />
-          <entry key="txt" value="25" />
+          <entry key="java" value="196" />
+          <entry key="txt" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="161" />
-          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="JAVA" value="196" />
+          <entry key="PLAIN_TEXT" value="108" />
         </counts>
       </usages-collector>
     </session>
@@ -52,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com.company/OrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+            <state relative-caret-position="348">
+              <caret line="100" column="33" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,20 +63,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="436">
+              <caret line="58" column="73" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -87,9 +89,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/test/com.company/OrderTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/Order.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -144,7 +146,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539898306950" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539899727371" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -287,13 +289,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539897791403</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dééplacement code de main --&gt; runMenu">
+      <created>1539898417784</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539898417784</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderTest_Given_Nothing_When_DisplayMenuSelection_Then_ShouldDisplayText - 2018.10.18 at 22h 51m 09s.xml">
-      <configuration name="OrderTest.Given_Nothing_When_DisplayMenuSelection_Then_ShouldDisplayText" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OrderTest_Given_Vegetarian_When_AskForMenuSelected_Then_ShouldDisplayCorrectSentence - 2018.10.18 at 22h 51m 18s.xml">
       <configuration name="OrderTest.Given_Vegetarian_When_AskForMenuSelected_Then_ShouldDisplayCorrectSentence" configurationId="JUnit" />
     </history-entry>
@@ -321,11 +327,15 @@
     <history-entry file="OrderTest_Given_NegativeValue_When_DisplayMenuSelected_Then_DisplayErrorSentence - 2018.10.18 at 23h 05m 22s.xml">
       <configuration name="OrderTest.Given_NegativeValue_When_DisplayMenuSelected_Then_DisplayErrorSentence" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OrderTest_Given_ChikenInStandardInput_When_MenuIsRun_Then_DisplayCorrectProcess - 2018.10.18 at 23h 31m 40s.xml">
+      <configuration name="OrderTest.Given_ChikenInStandardInput_When_MenuIsRun_Then_DisplayCorrectProcess" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -334,7 +344,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30022076" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30022076" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -358,30 +368,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout methode run menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout methode run menu" />
+    <MESSAGE value="dééplacement code de main --&gt; runMenu" />
+    <option name="LAST_COMMIT_MESSAGE" value="dééplacement code de main --&gt; runMenu" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com.company/OrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+        <state relative-caret-position="348">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="436">
+          <caret line="58" column="73" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
         </state>
       </provider>
     </entry>
