@@ -1,12 +1,12 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
-
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Order order = new Order();
-        order.runMenu();
-
+        order.runMenus();
     }
 }

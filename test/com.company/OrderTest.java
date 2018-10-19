@@ -29,53 +29,53 @@ public class OrderTest {
 
     @Test
 
-    public void Given_Chicken_When_DisplayMenuSelected_Then_DisplayChickenSentence() {
+public void Given_Chicken_When_DisplayMenuSelected_Then_DisplayChickenSentence() {
 
-        order.displaySelectedMenu(1);
+    order.displaySelectedMenu(1);
 
-        assertEquals("Vous avez choisi comme menu : poulet\n", outContent.toString().replace("\r\n", "\n"));
+    assertEquals("Vous avez choisi comme menu : poulet\n", outContent.toString().replace("\r\n", "\n"));
 
-    }
+}
 
-    @Test
+@Test
 
-    public void Given_Beef_When_DisplayMenuSelected_Then_DisplayBeefSentence() {
+public void Given_Beef_When_DisplayMenuSelected_Then_DisplayBeefSentence() {
 
-        order.displaySelectedMenu(2);
+    order.displaySelectedMenu(2);
 
-        assertEquals("Vous avez choisi comme menu : boeuf\n", outContent.toString().replace("\r\n", "\n"));
+    assertEquals("Vous avez choisi comme menu : boeuf\n", outContent.toString().replace("\r\n", "\n"));
 
-    }
+}
 
-    @Test
+@Test
 
-    public void Given_Vegetarian_When_DisplayMenuSelected_Then_DisplayVegetarianSentence() {
+public void Given_Vegetarian_When_DisplayMenuSelected_Then_DisplayVegetarianSentence() {
 
-        order.displaySelectedMenu(3);
+    order.displaySelectedMenu(3);
 
-        assertEquals("Vous avez choisi comme menu : végétarien\n", outContent.toString().replace("\r\n", "\n"));
+    assertEquals("Vous avez choisi comme menu : végétarien\n", outContent.toString().replace("\r\n", "\n"));
 
-    }
+}
 
-    @Test
+@Test
 
-    public void Given_TooBigValue_When_DisplayMenuSelected_Then_DisplayErrorSentence() {
+public void Given_TooBigValue_When_DisplayMenuSelected_Then_DisplayErrorSentence() {
 
-        order.displaySelectedMenu(15);
+    order.displaySelectedMenu(15);
 
-        assertEquals("Vous n'avez pas choisi de menu parmi les choix proposés\n", outContent.toString().replace("\r\n", "\n"));
+    assertEquals("Vous n'avez pas choisi de menu parmi les choix proposés\n", outContent.toString().replace("\r\n", "\n"));
 
-    }
+}
 
-    @Test
+@Test
 
-    public void Given_NegativeValue_When_DisplayMenuSelected_Then_DisplayErrorSentence() {
+public void Given_NegativeValue_When_DisplayMenuSelected_Then_DisplayErrorSentence() {
 
-        order.displaySelectedMenu(-6);
+    order.displaySelectedMenu(-6);
 
-        assertEquals("Vous n'avez pas choisi de menu parmi les choix proposés\n", outContent.toString().replace("\r\n", "\n"));
+    assertEquals("Vous n'avez pas choisi de menu parmi les choix proposés\n", outContent.toString().replace("\r\n", "\n"));
 
-    }
+}
 
     @Test
 
@@ -256,4 +256,27 @@ public class OrderTest {
         assertEquals("Vous n'avez pas choisi de boisson parmi les choix proposés\n", outContent.toString().replace("\r\n", "\n"));
 
     }
+    @Test
+    public void Given_OneMenuChikenWithFriesAndWaterInStandardInput_When_MenusIsRun_Then_DisplayCorrectProcess() {
+        System.setIn(new ByteArrayInputStream("1\n1\n2\n3\n".getBytes()));
+        order = new Order();
+        order.runMenus();
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Vous avez choisi comme menu : poulet", output[6]);
+        assertEquals("Vous avez choisi comme accompagnement : frites", output[12]);
+        assertEquals("Vous avez choisi comme boisson : soda", output[18]);
+    }
+    @Test
+    public void Given_TwoMenu_BeefWithVegetable_VegetarianWithNoRiceAndSparklingWaterInStandardInput_When_MenusIsRun_Then_DisplayCorrectProcess() {
+        System.setIn(new ByteArrayInputStream("2\n2\n1\n3\n2\n2\n".getBytes()));
+        order = new Order();
+        order.runMenus();
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Vous avez choisi comme menu : boeuf", output[6]);
+        assertEquals("Vous avez choisi comme accompagnement : légumes frais", output[12]);
+        assertEquals("Vous avez choisi comme menu : végétarien", output[18]);
+        assertEquals("Vous avez choisi comme accompagnement : pas de riz", output[23]);
+        assertEquals("Vous avez choisi comme boisson : eau gazeuse", output[29]);
+    }
+
 }

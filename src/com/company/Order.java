@@ -3,104 +3,146 @@ package com.company;
 import java.util.Scanner;
 
 public class Order {
-    /**
-     * Display all available menus in the restaurant.
-     */
-    public void displayAvailableMenu() {
-        System.out.println("Choix menu");
+Scanner sc = new Scanner(System.in);
 
-        System.out.println("1 - poulet");
+/**
+ * Display all available menus in the restaurant.
+ */
+public void displayAvailableMenu() {
 
-        System.out.println("2 - boeuf");
+    System.out.println("Choix du menu");
+    System.out.println("1 - poulet");
+    System.out.println("2 - boeuf");
+    System.out.println("3 - végétarien");
+    System.out.println("Que souhaitez-vous comme menu ?");
 
-        System.out.println("3 - végétarien");
-
-        System.out.println("Que souhaitez-vous comme menu ?");
-
-    }
-    /**
-     * Display a selected menu.
-     * @param nbMenu The selected menu.
-     */
-    public void displaySelectedMenu(int nbMenu) {
-        switch (nbMenu) {
-            case 1:
-                System.out.println("Vous avez choisi comme menu : poulet");
+}
+/**
+ * Display a selected menu.
+ * @param nbMenu The selected menu.
+ */
+public void displaySelectedMenu(int nbMenu) {
+    switch (nbMenu) {
+        case 1:
+            System.out.println("Vous avez choisi comme menu : poulet");
             break;
-            case 2:
+        case 2 :
             System.out.println("Vous avez choisi comme menu : boeuf");
             break;
-            case 3:
+        case 3 :
             System.out.println("Vous avez choisi comme menu : végétarien");
             break;
-            default:
+        default:
             System.out.println("Vous n'avez pas choisi de menu parmi les choix proposés");
             break;
-        }
     }
-    public void runMenu() {
-        this.displayAvailableMenu();
-        Scanner sc = new Scanner(System.in);
-        int nbMenu = sc.nextInt();
-        this.displaySelectedMenu(nbMenu);
-        switch (nbMenu) {
+
+}
+
+
+/**
+
+ * Display a selected side depending on all sides enable or not.
+
+ * All sides = vegetables, frites and rice
+
+ * No all sides = rice or not
+
+ * @param nbSide The selected Side
+
+ * @param allSidesEnable  enable display for all side or not
+
+ */
+public void displaySelectedSide(int nbSide, boolean allSidesEnable) {
+
+    if (allSidesEnable) {
+
+        switch (nbSide) {
 
             case 1:
 
-                displayAvailableSide(true);
-
-                int nbSide = sc.nextInt();
-
-                displaySelectedSide(nbSide, true);
-
-                displayAvailableDrink();
-
-                int nbDrink = sc.nextInt();
-
-                displaySelectedDrink(nbDrink);
+                System.out.println("Vous avez choisi comme accompagnement : légumes frais");
 
                 break;
 
             case 2:
 
-                displayAvailableSide(true);
-
-                nbSide = sc.nextInt();
-
-                displaySelectedSide(nbSide, true);
+                System.out.println("Vous avez choisi comme accompagnement : frites");
 
                 break;
 
             case 3:
 
-                displayAvailableSide(false);
+                System.out.println("Vous avez choisi comme accompagnement : riz");
 
-                nbSide = sc.nextInt();
+                break;
 
-                displaySelectedSide(nbSide, false);
+            default:
 
-                displayAvailableDrink();
-
-                nbDrink = sc.nextInt();
-
-                displaySelectedDrink(nbDrink);
+                System.out.println("Vous n'avez pas choisi d'accompagnement parmi les choix proposés");
 
                 break;
 
         }
+
+    } else {
+
+        switch (nbSide) {
+
+            case 1:
+
+                System.out.println("Vous avez choisi comme accompagnement : riz");
+
+                break;
+
+            case 2:
+
+                System.out.println("Vous avez choisi comme accompagnement : pas de riz");
+
+                break;
+
+            default:
+
+                System.out.println("Vous n'avez pas choisi d'accompagnement parmi les choix proposés");
+
+                break;
+
+        }
+
     }
 
-    /**
-     * Display a selected side depending on all sides enable or not.
+}
+    public void displaySelectedDrink(int nbDrink) {
 
-     * All sides = vegetables, frites and rice
+        switch (nbDrink) {
 
-     * No all sides = rice or not
+            case 1:
 
-     * @param nbSide The selected Side
+                System.out.println("Vous avez choisi comme boisson : eau plate");
 
-     * @param allSidesEnable  enable display for all side or not
-     */
+                break;
+
+            case 2:
+
+                System.out.println("Vous avez choisi comme boisson : eau gazeuse");
+
+                break;
+
+            case 3:
+
+                System.out.println("Vous avez choisi comme boisson : soda");
+
+                break;
+
+            default:
+
+                System.out.println("Vous n'avez pas choisi de boisson parmi les choix proposés");
+
+                break;
+
+        }
+
+    }
     /**
 
      * Display all available sides depending on all sides enable or not.
@@ -158,83 +200,64 @@ public class Order {
         System.out.println("Que souhaitez-vous comme boisson ?");
 
     }
-    public void displaySelectedSide(int nbSide, boolean allSidesEnable) {
 
-        if (allSidesEnable) {
+public void runMenu() {
+    this.displayAvailableMenu();
+    int nbMenu = sc.nextInt();
+    this.displaySelectedMenu(nbMenu);
+    switch (nbMenu) {
 
-            switch (nbSide) {
+        case 1:
 
-                case 1:
+            displayAvailableSide(true);
 
-                    System.out.println("Vous avez choisi comme accompagnement : légumes frais");
+            int nbSide = sc.nextInt();
 
-                    break;
+            displaySelectedSide(nbSide, true);
 
-                case 2:
+            displayAvailableDrink();
 
-                    System.out.println("Vous avez choisi comme accompagnement : frites");
+            int nbDrink = sc.nextInt();
 
-                    break;
+            displaySelectedDrink(nbDrink);
 
-                case 3:
+            break;
 
-                    System.out.println("Vous avez choisi comme accompagnement : riz");
+        case 2:
 
-                    break;
+            displayAvailableSide(true);
 
-                default:
+            nbSide = sc.nextInt();
 
-                    System.out.println("Vous n'avez pas choisi d'accompagnement parmi les choix proposés");
+            displaySelectedSide(nbSide, true);
 
-                    break;
+            break;
 
-            }
+        case 3:
 
-        } else {
+            displayAvailableSide(false);
 
-            switch (nbSide) {
+            nbSide = sc.nextInt();
 
-                case 1:
+            displaySelectedSide(nbSide, false);
 
-                    System.out.println("Vous avez choisi comme accompagnement : riz");
+            displayAvailableDrink();
 
-                    break;
+            nbDrink = sc.nextInt();
 
-                case 2:
+            displaySelectedDrink(nbDrink);
 
-                    System.out.println("Vous avez choisi comme accompagnement : pas de riz");
-
-                    break;
-
-                default:
-
-                    System.out.println("Vous n'avez pas choisi d'accompagnement parmi les choix proposés");
-
-                    break;
-
-            }
-
-        }
+            break;
 
     }
-    /**
-     * Display a selected drink.
-     * @param nbDrink The selected drink.
-     */
-    public void displaySelectedDrink(int nbDrink) {
-        switch (nbDrink) {
-            case 1:
-                System.out.println("Vous avez choisi comme boisson : eau plate");
-                break;
-            case 2:
-                System.out.println("Vous avez choisi comme boisson : eau gazeuse");
-                break;
-            case 3:
-                System.out.println("Vous avez choisi comme boisson : soda");
-                break;
-            default:
-                System.out.println("Vous n'avez pas choisi de boisson parmi les choix proposés");
-                break;
-        }
+}
+
+public void runMenus() {
+    System.out.println("Combien souhaitez vous commander de menu ?");
+    int nombreMenu = sc.nextInt();
+    int counter = 0;
+    for (int i = 0; i < nombreMenu ; i++){
+        runMenu();
     }
+}
 }
