@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eac137c8-306c-4037-a076-d162dbf06891" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyMenu/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyMenu/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyMenu/com/company/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyMenu/com/company/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/MyMenu/com/company/OrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/MyMenu/com/company/OrderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com.company/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com.company/OrderTest.java" afterDir="false" />
     </list>
@@ -68,6 +63,16 @@
           <entry key="JAVA" value="3" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="67" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="67" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -75,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com.company/OrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="103" column="45" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="45" />
+            <state>
+              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="278">
+              <caret line="256" lean-forward="true" selection-start-line="256" selection-end-line="256" />
             </state>
           </provider>
         </entry>
@@ -110,9 +115,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/Order.java" />
-        <option value="$PROJECT_DIR$/test/com.company/OrderTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/test/com.company/OrderTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Order.java" />
       </list>
     </option>
   </component>
@@ -168,7 +173,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539938545416" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539939620887" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -209,6 +214,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.OrderTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,36 +280,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.Given_Soda_When_DisplayDrinkSelected_Then_DisplaySodaSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyMenu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.OrderTest" />
-      <option name="METHOD_NAME" value="Given_Soda_When_DisplayDrinkSelected_Then_DisplaySodaSentence" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.OrderTest.Given_Soda_When_DisplayDrinkSelected_Then_DisplaySodaSentence" />
       <item itemvalue="JUnit.OrderTest.Given_BeefWithVegetableInStandardInput_When_MenuIsRun_Then_DisplayCorrectProcess" />
       <item itemvalue="JUnit.OrderTest.Given_ChikenWithFriesAndWaterInStandardInput_When_MenuIsRun_Then_DisplayCorrectProcess" />
       <item itemvalue="JUnit.OrderTest.Given_NegativeValue_When_DisplayMenuSelected_Then_DisplayErrorSentence" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.OrderTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.OrderTest" />
         <item itemvalue="JUnit.OrderTest.Given_NegativeValue_When_DisplayMenuSelected_Then_DisplayErrorSentence" />
         <item itemvalue="JUnit.OrderTest.Given_ChikenWithFriesAndWaterInStandardInput_When_MenuIsRun_Then_DisplayCorrectProcess" />
         <item itemvalue="JUnit.OrderTest.Given_BeefWithVegetableInStandardInput_When_MenuIsRun_Then_DisplayCorrectProcess" />
-        <item itemvalue="JUnit.OrderTest.Given_Soda_When_DisplayDrinkSelected_Then_DisplaySodaSentence" />
       </list>
     </recent_temporary>
   </component>
@@ -326,16 +329,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539899813629</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Possibilité de commander plusieurs menus&#10;Ajout method runMenus">
+      <created>1539938567466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539938567466</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderTest_Given_Vegetarian_When_AskForMenuSelected_Then_ShouldDisplayCorrectSentence - 2018.10.18 at 23h 02m 58s.xml">
-      <configuration name="OrderTest.Given_Vegetarian_When_AskForMenuSelected_Then_ShouldDisplayCorrectSentence" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderTest_Given_Chicken_When_DisplayMenuSelected_Then_DisplayChickenSentence - 2018.10.18 at 23h 03m 21s.xml">
-      <configuration name="OrderTest.Given_Chicken_When_DisplayMenuSelected_Then_DisplayChickenSentence" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OrderTest_Given_Beef_When_DisplayMenuSelected_Then_DisplayBeefSentence - 2018.10.18 at 23h 03m 26s.xml">
       <configuration name="OrderTest.Given_Beef_When_DisplayMenuSelected_Then_DisplayBeefSentence" configurationId="JUnit" />
     </history-entry>
@@ -360,6 +364,12 @@
     <history-entry file="OrderTest_Given_NoRiceAndNotAllSides_When_DisplaySideSelected_Then_DisplayNoRiceSentence - 2018.10.18 at 23h 57m 23s.xml">
       <configuration name="OrderTest.Given_NoRiceAndNotAllSides_When_DisplaySideSelected_Then_DisplayNoRiceSentence" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OrderTest - 2018.10.19 at 10h 44m 00s.xml">
+      <configuration name="OrderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderTest - 2018.10.19 at 10h 56m 48s.xml">
+      <configuration name="OrderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="27" width="960" height="1040" extended-state="0" />
@@ -381,7 +391,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289183" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32969698" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -399,23 +409,24 @@
     <MESSAGE value="ajout methode run menu" />
     <MESSAGE value="dééplacement code de main --&gt; runMenu" />
     <MESSAGE value="ajout methode allSidesEnable" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout methode allSidesEnable" />
+    <MESSAGE value="Possibilité de commander plusieurs menus&#10;Ajout method runMenus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Possibilité de commander plusieurs menus&#10;Ajout method runMenus" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/com.company/OrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="103" column="45" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="278">
+          <caret line="256" lean-forward="true" selection-start-line="256" selection-end-line="256" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
+    <entry file="file://$PROJECT_DIR$/test/com.company/OrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
